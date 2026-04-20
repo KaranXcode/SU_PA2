@@ -1,0 +1,66 @@
+# ---------------------------------------------------------------------------
+# .gitignore for Speech Understanding Assignment 2
+# ---------------------------------------------------------------------------
+
+# --- Python ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# --- Training data (too big for GitHub; see README for download steps) -----
+# Raw audio clips (663 MB)
+part1/data/cv/
+
+# Augmented Wav2Vec2 feature cache (2.5 GB)
+part1/data/cv_feats/
+
+# Source data archives (the README tells graders how to fetch these)
+part1/data.zip
+Hindi_test.tar.gz
+dev-clean.tar.gz
+
+# --- Model weights ----------------------------------------------------------
+# The FULL LID checkpoint is 1.2 GB (includes the frozen Wav2Vec2 backbone).
+# GitHub rejects files > 100 MB. We commit the HEAD-ONLY variant instead
+# (checkpoints/lid_head.pt, ~12 MB), which pipeline_part1.py reads by default.
+# Generate the head-only file with:
+#     python part1/strip_ckpt.py --in checkpoints/lid.pt --out checkpoints/lid_head.pt
+checkpoints/lid.pt
+checkpoints/lid_last.pt
+
+# --- Hugging Face / torch.hub caches (downloaded on first run) -------------
+# Not inside the repo, but just in case:
+.cache/
+hf_cache/
+
+# --- LaTeX build artifacts -------------------------------------------------
+*.aux
+*.log
+*.out
+*.toc
+*.bbl
+*.blg
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.lof
+*.lot
+*.nav
+*.snm
+*.vrb
+
+# --- IDE / editor ---
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# --- Misc ---
+*.log
+results - Copy/

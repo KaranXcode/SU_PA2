@@ -1,0 +1,39 @@
+{
+  "macro_f1_3class": 0.6487297007081491,
+  "macro_f1_en_vs_hi": 0.9730945510622235,
+  "per_class": {
+    "en": {
+      "precision": 0.991900592135379,
+      "recall": 0.9509736605531213,
+      "f1-score": 0.9710060604308435,
+      "support": 141271.0
+    },
+    "hi": {
+      "precision": 0.9579114962505622,
+      "recall": 0.9930888495486017,
+      "f1-score": 0.9751830416936035,
+      "support": 158729.0
+    },
+    "sil": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 0.0
+    },
+    "accuracy": 0.9732566666666667,
+    "macro avg": {
+      "precision": 0.6499373627953137,
+      "recall": 0.6480208367005743,
+      "f1-score": 0.6487297007081491,
+      "support": 300000.0
+    },
+    "weighted avg": {
+      "precision": 0.9739170747997086,
+      "recall": 0.9732566666666667,
+      "f1-score": 0.973216087293699,
+      "support": 300000.0
+    }
+  },
+  "n_eval_items": 300,
+  "ckpt": "../checkpoints/lid.pt"
+}

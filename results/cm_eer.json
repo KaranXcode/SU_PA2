@@ -1,0 +1,7 @@
+{
+  "EER": 0.0,
+  "n_train": 216,
+  "n_test": 54,
+  "passes_threshold": true,
+  "ckpt": "checkpoints/cm.pt"
+}

@@ -1,0 +1,239 @@
+# Task 2.2 -- EN/HI -> Maithili parallel dictionary.
+# Format: source<TAB>maithili_devanagari<TAB>(optional)maithili_ipa
+# Source tokens are lowercased, English uses Latin, Hindi uses Devanagari.
+# This is a STARTER set of ~150 entries focused on:
+#   (a) high-frequency function words & pronouns,
+#   (b) common content verbs / nouns likely in the Modi clip,
+#   (c) speech-course technical vocabulary (transliterated, since Maithili
+#       has no native equivalents -- per the assignment, that's allowed).
+# Extend to the full 500-word target by adding domain-specific rows.
+# Words not found here fall back to:
+#   * Devanagari source (Hindi-like) -> kept as-is (Maithili shares much
+#     vocab with Hindi)
+#   * Latin source -> deterministic Latin->Devanagari transliteration in
+#     translate_lrl.py (English loanwords keep English pronunciation, just
+#     written in Devanagari).
+# ============================================================================
+
+# --- pronouns / determiners ---
+i	हम	həm
+me	हमरा	həmra
+my	हमर	həmər
+we	हम सब	həm səb
+us	हमरा सब	həmra səb
+our	हमर	həmər
+you	अहाँ	əhã
+your	अहाँक	əhãk
+he	ओ	o
+she	ओ	o
+it	ई	i
+this	ई	i
+that	ओ	o
+these	ई सब	i səb
+those	ओ सब	o səb
+मैं	हम	həm
+मेरा	हमर	həmər
+हम	हम सब	həm səb
+हमारा	हमर	həmər
+तुम	अहाँ	əhã
+आप	अहाँ	əhã
+यह	ई	i
+वह	ओ	o
+ये	ई सब	i səb
+वे	ओ सब	o səb
+
+# --- be / aux / common verbs ---
+is	अछि	əttʃʰi
+are	अछि	əttʃʰi
+was	छल	tʃʰəl
+were	छल	tʃʰəl
+be	होएब	hoeb
+been	भेल	bʱel
+being	होइत	hoit
+have	अछि	əttʃʰi
+has	अछि	əttʃʰi
+had	छल	tʃʰəl
+do	करब	kərəb
+does	करैत	kərɛːt
+did	कएल	kəel
+will	होएत	hoet
+would	होइतैक	hoitɛːk
+can	सकैत	səkɛːt
+should	चाही	tʃaːhi
+must	अवश्य	əʋəʂj
+say	कहब	kəhəb
+said	कहल	kəhəl
+go	जाएब	dʒaːeb
+went	गेल	ɡel
+come	आएब	aːeb
+came	एलाह	elaːh
+make	बनाएब	bənaːeb
+made	बनाओल	bənaːol
+know	जानब	dʒaːnəb
+knew	जानल	dʒaːnəl
+think	सोचब	sotʃəb
+thought	सोचल	sotʃəl
+see	देखब	d̪ekʰəb
+saw	देखल	d̪ekʰəl
+take	लेब	leb
+took	लेल	lel
+give	देब	d̪eb
+gave	देल	d̪el
+हैं	अछि	əttʃʰi
+है	अछि	əttʃʰi
+था	छल	tʃʰəl
+थी	छल	tʃʰəl
+थे	छल	tʃʰəl
+होगा	होएत	hoet
+होना	होएब	hoeb
+करना	करब	kərəb
+करता	करैत	kərɛːt
+किया	कएल	kəel
+करेंगे	करब	kərəb
+जाना	जाएब	dʒaːeb
+जाता	जाइत	dʒaːit
+गया	गेल	ɡel
+आना	आएब	aːeb
+आता	आइत	aːit
+आया	एलाह	elaːh
+देना	देब	d̪eb
+देता	दैत	d̪ɛːt
+दिया	देल	d̪el
+लेना	लेब	leb
+लेता	लैत	lɛːt
+लिया	लेल	lel
+कहना	कहब	kəhəb
+कहा	कहल	kəhəl
+सोचना	सोचब	sotʃəb
+देखना	देखब	d̪ekʰəb
+जानना	जानब	dʒaːnəb
+
+# --- common nouns ---
+country	देश	d̪eʃ
+people	लोक	lok
+person	व्यक्ति	ʋjəktɪ
+government	सरकार	səɾkaːɾ
+nation	राष्ट्र	raːʂʈr
+day	दिन	d̪ɪn
+year	बरख	bərəkʰ
+time	समय	səməj
+work	काज	kaːdʒ
+life	जिनगी	dʒɪnəɡi
+home	घर	ɡʱər
+village	गाम	ɡaːm
+city	शहर	ʃəhər
+world	दुनिया	d̪ʊnɪja
+language	भाषा	bʱaːʂa
+school	विद्यालय	ʋɪd̪jaːləj
+student	विद्यार्थी	ʋɪd̪jaːrt̪ʰi
+teacher	शिक्षक	ʃɪkʂək
+hand	हाथ	haːt̪ʰ
+heart	हृदय	hr̩d̪əj
+mind	मन	mən
+देश	देश	d̪eʃ
+लोग	लोक	lok
+सरकार	सरकार	səɾkaːɾ
+दिन	दिन	d̪ɪn
+साल	बरख	bərəkʰ
+वर्ष	बरख	bərəkʰ
+समय	समय	səməj
+काम	काज	kaːdʒ
+जीवन	जिनगी	dʒɪnəɡi
+घर	घर	ɡʱər
+गाँव	गाम	ɡaːm
+शहर	शहर	ʃəhər
+दुनिया	दुनिया	d̪ʊnɪja
+भाषा	भाषा	bʱaːʂa
+
+# --- adjectives / quantifiers ---
+good	नीक	nik
+bad	खराब	kʰəɾaːb
+big	पैघ	pɛːɡʱ
+small	छोट	tʃʰoʈ
+new	नव	nəʋ
+old	पुरान	pʊɾaːn
+many	बहुत	bəhʊt
+few	थोड़	t̪ʰoɽ
+all	सब	səb
+some	किछु	kɪtʃʰu
+no	नहि	nəhɪ
+not	नहि	nəhɪ
+yes	हँ	hə̃
+अच्छा	नीक	nik
+बुरा	खराब	kʰəɾaːb
+बड़ा	पैघ	pɛːɡʱ
+छोटा	छोट	tʃʰoʈ
+नया	नव	nəʋ
+पुराना	पुरान	pʊɾaːn
+बहुत	बहुत	bəhʊt
+थोड़ा	थोड़	t̪ʰoɽ
+सब	सब	səb
+कुछ	किछु	kɪtʃʰu
+नहीं	नहि	nəhɪ
+हाँ	हँ	hə̃
+
+# --- adverbs / connectives ---
+today	आइ	aːi
+tomorrow	काल्हि	kaːlhɪ
+yesterday	काल्हि	kaːlhɪ
+now	आब	aːb
+then	तखन	t̪əkʰən
+here	एतय	et̪əj
+there	ओतय	ot̪əj
+when	कहिया	kəhɪja
+where	कतय	kət̪əj
+what	की	kiː
+why	किएक	kɪek
+how	कोना	kona
+because	कारण	kaːɾən
+also	सेहो	seho
+only	मात्र	maːt̪r
+आज	आइ	aːi
+कल	काल्हि	kaːlhɪ
+अब	आब	aːb
+तब	तखन	t̪əkʰən
+यहाँ	एतय	et̪əj
+वहाँ	ओतय	ot̪əj
+कब	कहिया	kəhɪja
+कहाँ	कतय	kət̪əj
+क्या	की	kiː
+क्यों	किएक	kɪek
+कैसे	कोना	kona
+
+# --- speech course technical vocab (transliterated) ---
+# Maithili has no native equivalents; we keep the English root in Devanagari
+# script (consistent with how other Indic languages handle these terms).
+spectrogram	स्पेक्ट्रोग्राम	speːkʈroɡraːm
+spectrum	स्पेक्ट्रम	speːkʈrəm
+cepstrum	सेप्स्ट्रम	sepsʈrəm
+mfcc	एमएफसीसी	emefsisi
+phoneme	फोनीम	foniːm
+phonetic	फोनेटिक	foneʈɪk
+frequency	फ्रिक्वेंसी	fɾɪkʋensi
+hertz	हर्ट्ज	həɾtsd̪
+amplitude	एम्प्लिट्यूड	emplɪʈjuːɖ
+signal	सिग्नल	sɪɡnəl
+sample	सैम्पल	sɛːmpəl
+audio	ऑडियो	ɔɖio
+speech	स्पीच	spitʃ
+voice	आवाज	aːʋaːdʒ
+recognition	रेकग्निशन	reːkəɡnɪʃən
+synthesis	सिंथेसिस	sɪnt̪ʰesɪs
+model	मॉडल	mɔɖəl
+neural	न्यूरल	njuːrəl
+network	नेटवर्क	neʈʋərk
+training	ट्रेनिंग	ʈreːnɪŋ
+data	डाटा	ɖaːʈa
+algorithm	एल्गोरिदम	elɡoɾɪd̪əm
+machine	मशीन	məʃiːn
+learning	लर्निंग	ləɾnɪŋ
+deep	डीप	ɖiːp
+encoder	एन्कोडर	enkoɖəɾ
+decoder	डिकोडर	ɖɪkoɖəɾ
+transformer	ट्रांसफॉर्मर	ʈraːnsfɔɾməɾ
+attention	अटेंशन	əʈensən
+embedding	एम्बेडिंग	embeɖɪŋ
+vector	वेक्टर	ʋekʈəɾ
+classification	क्लासिफिकेशन	klaːsɪfɪkeʃən
+language	लैंग्वेज	lɛːŋɡʋedʒ
+identification	आइडेंटिफिकेशन	aːiɖenʈɪfɪkeʃən

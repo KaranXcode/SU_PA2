@@ -1,0 +1,59 @@
+Speech Understanding Course Syllabus - Technical Vocabulary
+
+Module 1: Fundamentals of Speech Signals
+Speech production, phonemes, phonetics, phonology, articulatory features,
+source-filter model, glottal pulse, formants, pitch, fundamental frequency,
+voicing, stochastic signal, stationarity, short-time analysis, windowing,
+Hamming window, Hann window, pre-emphasis, framing, overlap-add.
+
+Module 2: Feature Extraction
+Mel-frequency cepstral coefficients, MFCC, cepstrum, quefrency, liftering,
+Linear Predictive Coding, LPC, perceptual linear prediction, PLP, log filterbank,
+Linear Frequency Cepstral Coefficients, LFCC, Constant-Q Cepstral Coefficients, CQCC,
+delta features, delta-delta, cepstral mean normalization, CMVN, spectrogram,
+mel-spectrogram, chroma features, pitch contour, F0, jitter, shimmer, zero-crossing rate.
+
+Module 3: Acoustic Modeling
+Hidden Markov Model, HMM, Gaussian Mixture Model, GMM, Viterbi algorithm,
+Baum-Welch, forward-backward algorithm, maximum likelihood estimation,
+expectation maximization, EM algorithm, acoustic model, phoneme recognition,
+triphone, senone, decision tree clustering.
+
+Module 4: Deep Learning for Speech
+Recurrent neural network, RNN, LSTM, GRU, bidirectional LSTM, BiLSTM,
+connectionist temporal classification, CTC, attention mechanism, transformer,
+self-attention, multi-head attention, encoder, decoder, encoder-decoder,
+conformer, wav2vec, HuBERT, Whisper, Wav2Vec 2.0, XLS-R, beam search,
+greedy decoding, logit bias, constrained decoding, n-gram language model,
+shallow fusion, deep fusion, rescoring.
+
+Module 5: Speaker and Language
+Speaker recognition, speaker verification, speaker identification,
+d-vector, x-vector, i-vector, GE2E loss, generalized end-to-end,
+speaker embedding, cosine similarity, PLDA, probabilistic linear discriminant analysis,
+language identification, LID, code-switching, Hinglish, code-mixed speech,
+zero-shot, few-shot, cross-lingual transfer.
+
+Module 6: Speech Synthesis and TTS
+Text-to-speech, TTS, Tacotron, FastSpeech, WaveNet, WaveGlow, HiFi-GAN,
+vocoder, mel-spectrogram decoder, VITS, YourTTS, Meta MMS, duration predictor,
+prosody, intonation, stress, rhythm, fundamental frequency contour,
+energy contour, dynamic time warping, DTW, prosody transfer, voice cloning,
+zero-shot voice cloning, speaker conditioning.
+
+Module 7: Robustness
+Noise reduction, denoising, spectral subtraction, DeepFilterNet, Wiener filter,
+reverberation, dereverberation, data augmentation, SpecAugment, adversarial example,
+adversarial perturbation, fast gradient sign method, FGSM, signal-to-noise ratio, SNR,
+anti-spoofing, countermeasure, bona fide, spoofed, equal error rate, EER,
+ASVspoof, presentation attack.
+
+Module 8: Evaluation
+Word error rate, WER, character error rate, CER, mel-cepstral distortion, MCD,
+Perceptual Evaluation of Speech Quality, PESQ, short-time objective intelligibility, STOI,
+mean opinion score, MOS, F1 score, precision, recall, confusion matrix, ROC curve,
+detection error trade-off, DET.
+
+Common Hinglish terms: stochastic, cepstrum, phoneme, prosody, formant,
+embedding, transformer, attention, convolution, backpropagation, gradient descent,
+softmax, sigmoid, cross-entropy, regularization, overfitting, batch normalization.

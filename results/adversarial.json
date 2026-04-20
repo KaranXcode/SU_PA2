@@ -1,0 +1,13 @@
+{
+  "attack_direction": "hi -> en",
+  "min_epsilon": 9.785929350649665e-06,
+  "snr_db": 80.5326156616211,
+  "frames_flipped_pct": 30.12048304080963,
+  "clean_source_lang_pct": 100.0,
+  "passes_inaudible": true,
+  "target_segment": {
+    "start": 346.5,
+    "end": 357.86,
+    "lang": "hi"
+  }
+}

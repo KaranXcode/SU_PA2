@@ -1,0 +1,67 @@
+{
+  "mcd": {
+    "mcd": 7.98975009364893,
+    "cosine_similarity_mean_mfcc": 0.8711864650432743,
+    "mcd_reverse": 7.98975009364893,
+    "passes": true,
+    "matching": "speaker-mean MFCC (non-parallel)",
+    "ref_frames": 5908,
+    "syn_frames": 35095,
+    "ref_voiced_frames": 4611,
+    "syn_voiced_frames": 28411,
+    "n_mfcc": 25
+  },
+  "switching": {
+    "n_predicted_switches": 30,
+    "predicted_switches_s": [
+      17.22,
+      20.9,
+      23.02,
+      24.66,
+      41.52,
+      42.72,
+      222.64,
+      223.22,
+      258.98,
+      260.36,
+      339.14,
+      343.88,
+      346.5,
+      357.86,
+      358.54,
+      363.98,
+      373.72,
+      374.22,
+      374.88,
+      375.68,
+      519.72,
+      520.34,
+      533.98,
+      542.82,
+      544.8,
+      546.06,
+      556.36,
+      560.0,
+      594.7,
+      595.2
+    ],
+    "audio_duration_s": 600.6,
+    "switches_per_minute": 2.997002997002997
+  },
+  "wer": {
+    "en": {
+      "wer": 0.14453164556962024,
+      "ref_words": 316,
+      "hyp_words": 621,
+      "threshold": 0.15,
+      "passes": true
+    },
+    "hi": {
+      "wer": 0.23876878612716763,
+      "ref_words": 173,
+      "hyp_words": 90,
+      "threshold": 0.25,
+      "passes": true
+    }
+  }
+}
